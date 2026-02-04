@@ -13,7 +13,20 @@
           "package_name": "com.example.ttgneventos"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "970624479045-9krg8og2q0grps4m91h4kdmnik6et5s2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ttgneventos",
+            "certificate_hash": "1c6809c0e9823a69ec25a940444419b02c6c1b61"
+          }
+        },
+        {
+          "client_id": "970624479045-56070hg4p64j0ggemmksffqd4a65mll4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDsecrKWkLR9Lx2sOtozBJKtLkxMSAAX-U"
@@ -21,26 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:970624479045:android:dfa1ada035372e5d68582c",
-        "android_client_info": {
-          "package_name": "com.t.tgneventos"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDsecrKWkLR9Lx2sOtozBJKtLkxMSAAX-U"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970624479045-56070hg4p64j0ggemmksffqd4a65mll4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

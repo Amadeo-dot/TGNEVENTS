@@ -93,11 +93,13 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
                                 Usuario nuevoUsuario = new Usuario(nombre, correo, password);
                                 nuevoUsuario.setAdmin(false);
 
+                                db = FirebaseFirestore.getInstance();
                                 //3. Guarda el usuario en la base de datos
-                                db.collection("usuarios").document(uid).set(nuevoUsuario)
+                                db.collection("Usuarios").document(uid).set(nuevoUsuario)
                                         .addOnSuccessListener(aVoid -> {
                                             // El usuario se ha registrado correctamente
                                             Toast.makeText(this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
+                                            mAuth.signOut();
                                             Intent intent = new Intent(this, Login.class);
                                             startActivity(intent);
                                             finish();

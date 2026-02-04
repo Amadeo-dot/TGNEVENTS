@@ -87,12 +87,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     }
 
-
-
-
-
         private void ObtenerDatosUsuario(String uid){
-            db.collection("usuarios").document(uid).get()
+            db.collection("Usuarios").document(uid).get()
                     .addOnSuccessListener(documentSnapshot -> {
                         if (documentSnapshot.exists()) {
                             Usuario usuario = documentSnapshot.toObject(Usuario.class);

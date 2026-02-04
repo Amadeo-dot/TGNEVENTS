@@ -25,7 +25,8 @@ public class Inicio extends AppCompatActivity {
             return insets;
         });
         estado_admin = findViewById(R.id.es_admin);
-        admin = getIntent().getBooleanExtra("admin", false);
+        // Cambio sugerido
+        admin = getIntent().getBooleanExtra("Es_admin", false);
 
         if (admin) {
             estado_admin.setText("SI ADMIN");
